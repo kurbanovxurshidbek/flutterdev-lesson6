@@ -8,6 +8,14 @@ class AmazonPage extends StatefulWidget {
 }
 
 class _AmazonPageState extends State<AmazonPage> {
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    print("initState");
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -57,7 +65,7 @@ class _AmazonPageState extends State<AmazonPage> {
                     Expanded(
                       child: TextField(
                         decoration: InputDecoration(
-                            hintText: "What are you looking for?",
+                            hintText: "What are you looking for? ",
                             border: InputBorder.none,
                             icon: Icon(Icons.search, color: Color(0xFF018197))),
                       ),
@@ -87,7 +95,7 @@ class _AmazonPageState extends State<AmazonPage> {
                           width: 5,
                         ),
                         Text(
-                          "Deliver to Korea, Republic of",
+                          "Deliver to Korea, Republic of,777",
                           style: TextStyle(color: Colors.white),
                         ),
                       ],
