@@ -8,6 +8,14 @@ class FacebookPage extends StatefulWidget {
 }
 
 class _FacebookPageState extends State<FacebookPage> {
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    print("initState");
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
